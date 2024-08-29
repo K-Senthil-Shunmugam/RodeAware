@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/idIVLogo"
+        android:layout_width="375dp"
+        android:layout_height="489dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/tspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="375dp"
+        android:text="0 km/h"
+        android:textColor="#880000"
+        android:textSize="34sp"
+        android:fontFamily="@font/seven"/>
+
+    <TextView
+        android:id="@+id/tacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="369dp"
+        android:text="0 m/s2"
+        android:textColor="#880000"
+        android:textSize="34sp"
+        android:fontFamily="@font/seven"/>
+
+    <TextView
+        android:id="@+id/RoadAware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/blunt"
+        android:text=" Have a safe ride "
+        android:textColor="#880000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/stopRideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:onClick="stopRide"
+        android:text=" Stop Ride "
+        android:textSize="30sp"
+        android:background="#FFC0CB"
+        android:textColor="#880000"
+        android:fontFamily="@font/blunt"
+        android:shadowColor="@color/black"
+        />
+
+
+</RelativeLayout>

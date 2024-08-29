@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFC0CB">
+
+    <Button
+        android:id="@+id/googleSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="#FFC0CB"
+        android:drawableLeft="@drawable/google"
+        android:fontFamily="@font/far"
+        android:shadowColor="@color/black"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:text="  SignIn  "
+        android:textColor="#880000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/far"
+        android:text="  SignIn With Google  "
+        android:textColor="#880000"
+        android:textSize="30sp" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFC0CB">
+
+    <!-- Spinner for selecting session -->
+    <Spinner
+        android:id="@+id/spinner_sessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="26dp" />
+
+    <!-- TextView for displaying maximum speed -->
+    <TextView
+        android:id="@+id/tv_max_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_sessions"
+        android:layout_marginTop="16dp"
+        android:text="Max Speed: 0 km/h"
+        android:textSize="20sp"
+        android:textColor="#880000"
+        android:fontFamily="@font/far" />
+
+    <!-- TextView for displaying maximum acceleration -->
+    <TextView
+        android:id="@+id/tv_max_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_max_speed"
+        android:layout_marginTop="8dp"
+        android:text="Max Acceleration: 0 m/s2"
+        android:textSize="20sp"
+        android:textColor="#880000"
+        android:fontFamily="@font/far" />
+
+    <!-- TextView for displaying average safety score -->
+
+    <!-- Map view for displaying path -->
+
+    <!-- Line Chart for displaying data -->
+
+    <TextView
+        android:id="@+id/tv_avg_safety_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_max_acceleration"
+        android:layout_alignStart="@+id/tv_max_acceleration"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/far"
+        android:text="Ride Safety Score:"
+        android:textColor="#880000"
+        android:textSize="20sp" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map_view"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_below="@id/tv_avg_safety_score"
+        android:layout_marginTop="17dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="393dp"
+        android:layout_height="312dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="7dp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFC0CB">
+
+    <TextView
+        android:id="@+id/RoadAware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/far"
+        android:text=" Rode Aware "
+        android:textColor="#880000"
+        android:textSize="40sp" />z
+
+    <Button
+        android:id="@+id/startRideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text=" Start Ride "
+        android:textColor="#880000"
+        android:background="#FFC0CB"
+        android:shadowColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/blunt"/>
+
+    <Button
+        android:id="@+id/dashBoardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text=" Dash Board "
+        android:textColor="#880000"
+        android:background="#FFC0CB"
+        android:shadowColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/blunt"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFC0CB"
+        android:text="Log Out"
+        android:textColor="#880000" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/far"
+        android:text="Welcome!"
+        android:textColor="#880000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:fontFamily="@font/far"
+        android:text=" "
+        android:textColor="#880000"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
